@@ -1,0 +1,203 @@
+#!/bin/bash
+
+# YouTube Research Agent - Complete Run Commands
+echo "🎥 YouTube Research Agent - Complete Setup & Run Commands"
+echo "=========================================================="
+
+# Step 1: Environment Setup
+echo ""
+echo "📋 STEP 1: Environment Setup"
+echo "----------------------------"
+
+# Create project directory
+echo "📁 Creating project directory..."
+mkdir -p youtube_research_agent
+cd youtube_research_agent
+
+# Setup environment file
+echo "⚙️ Setting up environment..."
+if [ ! -f .env ]; then
+    cp .env.example .env
+    echo "✅ Created .env file - PLEASE EDIT WITH YOUR API KEYS!"
+    echo "   Required: YOUTUBE_API_KEY and OPENAI_API_KEY"
+else
+    echo "✅ .env file already exists"
+fi
+
+echo ""
+echo "📋 STEP 2: Docker Setup (Recommended)"
+echo "------------------------------------"
+echo "🔧 Option A: Full Docker Setup"
+echo "   docker-compose up --build -d"
+echo ""
+echo "⏳ Wait for services to start (30-60 seconds)..."
+echo ""
+echo "🔍 Check services:"
+echo "   • API: curl http://localhost:8000/health"
+echo "   • Flower: curl http://localhost:5555"
+
+echo ""
+echo "📋 STEP 3: Local Development Setup"
+echo "--------------------------------"
+echo "🐍 Option B: Local Python Setup"
+echo ""
+echo "# Create virtual environment"
+echo "python -m venv venv"
+echo ""
+echo "# Activate virtual environment"
+echo "# On Linux/Mac:"
+echo "source venv/bin/activate"
+echo "# On Windows:"
+echo "venv\\Scripts\\activate"
+echo ""
+echo "# Install base dependencies"
+echo "pip install -r requirements.txt"
+echo ""
+echo "# Install Streamlit dependencies"
+echo "pip install streamlit==1.28.0 plotly==5.17.0 pandas==2.1.3 altair==5.1.2"
+echo ""
+echo "# Start individual services"
+echo "docker-compose up -d db redis qdrant  # Infrastructure only"
+
+echo ""
+echo "📋 STEP 4: Running the Application"
+echo "--------------------------------"
+
+echo ""
+echo "🖥️ Terminal 1 - FastAPI Backend:"
+echo "uvicorn main:app --host 0.0.0.0 --port 8000 --reload"
+echo ""
+echo "🔄 Terminal 2 - Celery Worker:"
+echo "celery -A celery_app.celery_app worker --loglevel=info --concurrency=4"
+echo "🎨 Terminal 5 - Streamlit Dashboard:"
+echo "streamlit run streamlit_app.py --server.port 8501"
+
+echo ""
+echo "📋 STEP 5: Quick Test Commands"
+echo "----------------------------"
+
+echo ""
+echo "🔍 Health Check:"
+echo "curl http://localhost:8000/health"
+echo ""
+echo "🎯 Start Research (Example):"
+echo 'curl -X POST "http://localhost:8000/api/v1/research/start" \'
+echo '  -H "Content-Type: application/json" \'
+echo '  -d '"'"'{'
+echo '    "channel_identifier": "@channelname",'
+echo '    "scope": "standard",'
+echo '    "max_videos": 50,'
+echo '    "include_transcripts": true'
+echo '  }'"'"
+echo ""
+echo "📊 Check Task Status:"
+echo "curl http://localhost:8000/api/v1/research/{task_id}"
+echo ""
+echo "📄 Get Results:"
+echo "curl http://localhost:8000/api/v1/research/{task_id}/result"
+
+echo ""
+echo "📋 STEP 6: Access Points"
+echo "----------------------"
+
+echo ""
+echo "🌐 Web Interfaces:"
+echo "   • Streamlit Dashboard: http://localhost:8501"
+echo "   • FastAPI Docs: http://localhost:8000/docs"
+echo "   • Celery Flower: http://localhost:5555"
+echo "   • Qdrant Console: http://localhost:6333/dashboard"
+echo ""
+echo "🔌 Direct API Access:"
+echo "   • Health: http://localhost:8000/health"
+echo "   • Research: POST http://localhost:8000/api/v1/research/start"
+echo "   • Monitor: GET http://localhost:8000/api/v1/research/{task_id}"
+echo ""
+echo "📊 Database Connections:"
+echo "   • PostgreSQL: localhost:5432 (postgres/password)"
+echo "   • Redis: localhost:6379"
+echo "   • Qdrant: localhost:6333"
+
+echo ""
+echo "📋 STEP 7: Production Deployment"
+echo "-------------------------------"
+
+echo ""
+echo "🐳 Docker Production:"
+echo "# Build and deploy all services"
+echo "docker-compose -f docker-compose.yml up -d --build"
+echo ""
+echo "# Scale workers for high load"
+echo "docker-compose up -d --scale celery-worker=4"
+echo ""
+echo "# Monitor logs"
+echo "docker-compose logs -f"
+
+echo ""
+echo "📋 STEP 8: Troubleshooting"
+echo "-------------------------"
+
+echo ""
+echo "❌ Common Issues & Solutions:"
+echo ""
+echo "1. API Connection Failed:"
+echo "   • Check if FastAPI is running: curl http://localhost:8000/health"
+echo "   • Verify .env file has correct API keys"
+echo "   • Check Docker services: docker-compose ps"
+echo ""
+echo "2. Tasks Not Processing:"
+echo "   • Check Celery workers: celery -A celery_app.celery_app status"
+echo "   • Monitor with Flower: http://localhost:5555"
+echo "   • Check Redis connection: redis-cli ping"
+echo ""
+echo "3. Database Connection Issues:"
+echo "   • Verify PostgreSQL: docker-compose logs db"
+echo "   • Check connection string in .env"
+echo "   • Run migrations: python -c \"from config.database import create_tables; create_tables()\""
+echo ""
+echo "4. YouTube API Quota Exceeded:"
+echo "   • Check quota usage in logs"
+echo "   • Wait for daily reset (midnight PT)"
+echo "   • Consider upgrading API quota"
+echo ""
+echo "5. Streamlit Not Loading:"
+echo "   • Check if FastAPI backend is running"
+echo "   • Verify port 8501 is available"
+echo "   • Check browser console for errors"
+
+echo ""
+echo "📋 DEVELOPMENT WORKFLOW"
+echo "====================="
+
+echo ""
+echo "🔄 Typical Development Session:"
+echo "1. Start infrastructure: docker-compose up -d db redis qdrant"
+echo "2. Activate venv: source venv/bin/activate"
+echo "3. Start FastAPI: uvicorn main:app --reload"
+echo "4. Start Celery: celery -A celery_app.celery_app worker --loglevel=info"
+echo "5. Start Streamlit: streamlit run streamlit_app.py"
+echo "6. Open browser: http://localhost:8501"
+
+echo ""
+echo "🧪 Testing:"
+echo "pytest test_system.py -v"
+echo "pytest tests/ -v --cov=. --cov-report=html"
+
+echo ""
+echo "📁 Logs Location:"
+echo "   • Application logs: ./logs/"
+echo "   • Docker logs: docker-compose logs [service]"
+echo "   • Celery logs: Check Flower dashboard"
+
+echo ""
+echo "🎯 READY TO USE!"
+echo "==============="
+echo ""
+echo "Your YouTube Research Agent is ready! 🚀"
+echo ""
+echo "Quick Start:"
+echo "1. Edit .env with your API keys"
+echo "2. Run: docker-compose up -d --build"
+echo "3. Run: streamlit run streamlit_app.py"
+echo "4. Visit: http://localhost:8501"
+echo ""
+echo "Happy researching! 🎥📊"

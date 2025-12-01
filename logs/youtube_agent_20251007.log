@@ -1,0 +1,72 @@
+2025-10-07 17:05:40,645 - root - INFO - Logging system initialized
+2025-10-07 17:05:40,677 - main - INFO - Starting YouTube Research Agent API
+2025-10-07 17:15:47,088 - root - INFO - Logging system initialized
+2025-10-07 17:15:47,105 - main - INFO - Starting YouTube Research Agent API
+2025-10-07 17:21:48,752 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:22:11,305 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:25:45,766 - main - INFO - Shutting down YouTube Research Agent API
+2025-10-07 17:25:52,306 - root - INFO - Logging system initialized
+2025-10-07 17:25:52,327 - main - INFO - Starting YouTube Research Agent API
+2025-10-07 17:27:14,254 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:27:30,378 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:27:36,482 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:29:21,411 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:29:25,851 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (0/20) now.
+2025-10-07 17:29:27,881 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2025-10-07 17:29:30,914 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2025-10-07 17:29:33,946 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2025-10-07 17:29:36,986 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2025-10-07 17:29:40,016 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2025-10-07 17:29:43,047 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2025-10-07 17:29:46,075 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2025-10-07 17:29:49,101 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2025-10-07 17:29:52,127 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2025-10-07 17:29:55,155 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2025-10-07 17:29:58,184 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2025-10-07 17:30:01,216 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2025-10-07 17:30:04,255 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2025-10-07 17:30:07,304 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2025-10-07 17:30:10,345 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2025-10-07 17:30:13,367 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2025-10-07 17:30:16,397 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2025-10-07 17:30:19,424 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2025-10-07 17:30:22,448 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2025-10-07 17:30:25,477 - celery.backends.redis - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2025-10-07 17:30:25,481 - api_endpoints - ERROR - Failed to start research task: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:30:31,551 - api_endpoints - ERROR - Failed to get system stats: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:30:35,628 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (0/20) now.
+2025-10-07 17:30:37,678 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (1/20) in 1.00 second.
+2025-10-07 17:30:40,715 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (2/20) in 1.00 second.
+2025-10-07 17:30:43,745 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (3/20) in 1.00 second.
+2025-10-07 17:30:46,778 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (4/20) in 1.00 second.
+2025-10-07 17:30:49,818 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (5/20) in 1.00 second.
+2025-10-07 17:30:52,849 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (6/20) in 1.00 second.
+2025-10-07 17:30:55,888 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (7/20) in 1.00 second.
+2025-10-07 17:30:58,944 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (8/20) in 1.00 second.
+2025-10-07 17:31:01,986 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (9/20) in 1.00 second.
+2025-10-07 17:31:05,127 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (10/20) in 1.00 second.
+2025-10-07 17:31:08,167 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (11/20) in 1.00 second.
+2025-10-07 17:31:11,200 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (12/20) in 1.00 second.
+2025-10-07 17:31:14,249 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (13/20) in 1.00 second.
+2025-10-07 17:31:17,297 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (14/20) in 1.00 second.
+2025-10-07 17:31:20,352 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (15/20) in 1.00 second.
+2025-10-07 17:31:23,384 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (16/20) in 1.00 second.
+2025-10-07 17:31:26,410 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (17/20) in 1.00 second.
+2025-10-07 17:31:29,459 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (18/20) in 1.00 second.
+2025-10-07 17:31:32,514 - celery.backends.redis - ERROR - Connection to Redis lost: Retry (19/20) in 1.00 second.
+2025-10-07 17:31:35,545 - celery.backends.redis - CRITICAL - 
+Retry limit exceeded while trying to reconnect to the Celery redis result store backend. The Celery application must be restarted.
+
+2025-10-07 17:31:35,548 - api_endpoints - ERROR - Failed to start research task: Error 10061 connecting to localhost:6379. No connection could be made because the target machine actively refused it.
+2025-10-07 17:32:30,869 - api_endpoints - INFO - Started research task 22833e66-40a5-42c9-a8d8-bd9be723b072 for channel https://www.youtube.com/@BusinessInsider
+2025-10-07 17:35:42,634 - main - INFO - Shutting down YouTube Research Agent API
+2025-10-07 17:36:01,088 - root - INFO - Logging system initialized
+2025-10-07 17:36:01,112 - main - INFO - Starting YouTube Research Agent API
+2025-10-07 17:39:40,601 - main - INFO - Shutting down YouTube Research Agent API
+2025-10-07 17:39:47,350 - root - INFO - Logging system initialized
+2025-10-07 17:39:47,371 - main - INFO - Starting YouTube Research Agent API
+2025-10-07 17:40:32,861 - main - INFO - Shutting down YouTube Research Agent API
+2025-10-07 17:40:38,364 - root - INFO - Logging system initialized
+2025-10-07 17:40:38,380 - main - INFO - Starting YouTube Research Agent API

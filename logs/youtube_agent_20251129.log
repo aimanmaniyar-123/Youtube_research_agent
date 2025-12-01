@@ -1,0 +1,190 @@
+2025-11-29 13:56:28,682 - faiss.loader - INFO - Loading faiss.
+2025-11-29 13:56:28,740 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-29 13:56:32,258 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-11-29 13:56:32,259 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:56:32,262 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-11-29 13:56:32,263 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:56:32,265 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-11-29 13:56:32,266 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:56:32,269 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-11-29 13:56:32,281 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,283 - sqlalchemy.engine.Engine - INFO - [generated in 0.00268s] {'table_name': 'research_projects', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,292 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,296 - sqlalchemy.engine.Engine - INFO - [cached since 0.0153s ago] {'table_name': 'agent_tasks', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,299 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,305 - sqlalchemy.engine.Engine - INFO - [cached since 0.02433s ago] {'table_name': 'video_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,310 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,313 - sqlalchemy.engine.Engine - INFO - [cached since 0.03293s ago] {'table_name': 'content_vectors', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,318 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,334 - sqlalchemy.engine.Engine - INFO - [cached since 0.05322s ago] {'table_name': 'channel_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,338 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,341 - sqlalchemy.engine.Engine - INFO - [cached since 0.06026s ago] {'table_name': 'research_reports', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,344 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,348 - sqlalchemy.engine.Engine - INFO - [cached since 0.06788s ago] {'table_name': 'system_metrics', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,352 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,356 - sqlalchemy.engine.Engine - INFO - [cached since 0.07555s ago] {'table_name': 'transcripts', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,363 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:56:32,366 - sqlalchemy.engine.Engine - INFO - [cached since 0.08528s ago] {'table_name': 'analysis_results', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:56:32,371 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-11-29 13:56:32,374 - config_database - INFO - Database tables created successfully
+2025-11-29 13:56:33,983 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-29 13:56:36,393 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-11-29 13:56:36,394 - services_embedding_service - INFO - Embedding model all-MiniLM-L6-v2 initialized
+2025-11-29 13:56:36,396 - vector_db - INFO - Created new FAISS index (dim=384) at ./data/faiss_index
+2025-11-29 13:56:37,951 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 13:56:38,006 - main - INFO - LLM test: True
+2025-11-29 13:59:21,340 - faiss.loader - INFO - Loading faiss.
+2025-11-29 13:59:21,410 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-29 13:59:22,701 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-11-29 13:59:22,704 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:59:22,710 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-11-29 13:59:22,713 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:59:22,716 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-11-29 13:59:22,719 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 13:59:22,724 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-11-29 13:59:22,747 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,753 - sqlalchemy.engine.Engine - INFO - [generated in 0.00602s] {'table_name': 'research_projects', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,772 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,777 - sqlalchemy.engine.Engine - INFO - [cached since 0.03021s ago] {'table_name': 'agent_tasks', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,782 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,785 - sqlalchemy.engine.Engine - INFO - [cached since 0.03814s ago] {'table_name': 'video_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,789 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,794 - sqlalchemy.engine.Engine - INFO - [cached since 0.04704s ago] {'table_name': 'content_vectors', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,798 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,802 - sqlalchemy.engine.Engine - INFO - [cached since 0.0552s ago] {'table_name': 'channel_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,808 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,815 - sqlalchemy.engine.Engine - INFO - [cached since 0.06778s ago] {'table_name': 'research_reports', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,819 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,824 - sqlalchemy.engine.Engine - INFO - [cached since 0.07738s ago] {'table_name': 'system_metrics', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,829 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,833 - sqlalchemy.engine.Engine - INFO - [cached since 0.08622s ago] {'table_name': 'transcripts', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,837 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 13:59:22,843 - sqlalchemy.engine.Engine - INFO - [cached since 0.09572s ago] {'table_name': 'analysis_results', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 13:59:22,847 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-11-29 13:59:22,871 - config_database - INFO - Database tables created successfully
+2025-11-29 13:59:24,538 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-29 13:59:26,860 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-11-29 13:59:26,861 - services_embedding_service - INFO - Embedding model all-MiniLM-L6-v2 initialized
+2025-11-29 13:59:26,862 - vector_db - INFO - Created new FAISS index (dim=384) at ./data/faiss_index
+2025-11-29 13:59:27,642 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 13:59:27,703 - main - INFO - LLM test: True
+2025-11-29 14:03:10,207 - faiss.loader - INFO - Loading faiss.
+2025-11-29 14:03:10,286 - faiss.loader - INFO - Successfully loaded faiss.
+2025-11-29 14:03:11,622 - sqlalchemy.engine.Engine - INFO - select pg_catalog.version()
+2025-11-29 14:03:11,624 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 14:03:11,627 - sqlalchemy.engine.Engine - INFO - select current_schema()
+2025-11-29 14:03:11,628 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 14:03:11,630 - sqlalchemy.engine.Engine - INFO - show standard_conforming_strings
+2025-11-29 14:03:11,631 - sqlalchemy.engine.Engine - INFO - [raw sql] {}
+2025-11-29 14:03:11,633 - sqlalchemy.engine.Engine - INFO - BEGIN (implicit)
+2025-11-29 14:03:11,643 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,645 - sqlalchemy.engine.Engine - INFO - [generated in 0.00276s] {'table_name': 'research_projects', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,655 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,657 - sqlalchemy.engine.Engine - INFO - [cached since 0.0148s ago] {'table_name': 'agent_tasks', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,660 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,663 - sqlalchemy.engine.Engine - INFO - [cached since 0.02076s ago] {'table_name': 'video_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,668 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,673 - sqlalchemy.engine.Engine - INFO - [cached since 0.03034s ago] {'table_name': 'content_vectors', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,679 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,703 - sqlalchemy.engine.Engine - INFO - [cached since 0.0605s ago] {'table_name': 'channel_data', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,706 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,709 - sqlalchemy.engine.Engine - INFO - [cached since 0.0662s ago] {'table_name': 'research_reports', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,712 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,715 - sqlalchemy.engine.Engine - INFO - [cached since 0.07216s ago] {'table_name': 'system_metrics', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,718 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,721 - sqlalchemy.engine.Engine - INFO - [cached since 0.07817s ago] {'table_name': 'transcripts', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,725 - sqlalchemy.engine.Engine - INFO - SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+2025-11-29 14:03:11,728 - sqlalchemy.engine.Engine - INFO - [cached since 0.08586s ago] {'table_name': 'analysis_results', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+2025-11-29 14:03:11,732 - sqlalchemy.engine.Engine - INFO - COMMIT
+2025-11-29 14:03:11,734 - config_database - INFO - Database tables created successfully
+2025-11-29 14:03:13,471 - sentence_transformers.SentenceTransformer - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-29 14:03:15,806 - sentence_transformers.SentenceTransformer - INFO - Use pytorch device: cpu
+2025-11-29 14:03:15,807 - services_embedding_service - INFO - Embedding model all-MiniLM-L6-v2 initialized
+2025-11-29 14:03:15,808 - vector_db - INFO - Created new FAISS index (dim=384) at ./data/faiss_index
+2025-11-29 14:03:17,144 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-11-29 14:03:17,207 - main - INFO - LLM test: True
+2025-11-29 14:03:17,208 - main - INFO -  All services initialized successfully
+2025-11-29 14:04:03,267 - googleapiclient.discovery_cache - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-11-29 14:04:10,926 - utils - ERROR - Transcript fetch failed for LLflV4c-RP0: no element found: line 1, column 0
+2025-11-29 14:04:15,433 - utils - ERROR - Transcript fetch failed for vXv7O4SB21U: no element found: line 1, column 0
+2025-11-29 14:04:22,402 - utils - ERROR - Transcript fetch failed for l6bTbg3aVIM: no element found: line 1, column 0
+2025-11-29 14:04:26,236 - utils - ERROR - Transcript fetch failed for 9sp4pP6bB08: no element found: line 1, column 0
+2025-11-29 14:04:30,536 - utils - ERROR - Transcript fetch failed for -EHJ6aeITl0: no element found: line 1, column 0
+2025-11-29 14:04:34,837 - utils - ERROR - Transcript fetch failed for hW1e_2F0yn0: no element found: line 1, column 0
+2025-11-29 14:04:39,126 - utils - ERROR - Transcript fetch failed for vFAqBlDpEm0: no element found: line 1, column 0
+2025-11-29 14:04:52,040 - utils - ERROR - Transcript fetch failed for S39b5laVmjs: no element found: line 1, column 0
+2025-11-29 14:05:08,015 - utils - ERROR - Transcript fetch failed for Fzs5fEbT4ic: no element found: line 1, column 0
+2025-11-29 14:05:12,889 - utils - ERROR - Transcript fetch failed for f2b0q2qKNNU: no element found: line 1, column 0
+2025-11-29 14:05:16,960 - utils - ERROR - Transcript fetch failed for LlTqvapKydk: no element found: line 1, column 0
+2025-11-29 14:05:21,003 - utils - ERROR - Transcript fetch failed for K-VPQeWHdXM: no element found: line 1, column 0
+2025-11-29 14:05:24,731 - utils - ERROR - Transcript fetch failed for 2XvzIl2azGg: no element found: line 1, column 0
+2025-11-29 14:05:30,132 - utils - ERROR - Transcript fetch failed for CWdsqvg0wCw: no element found: line 1, column 0
+2025-11-29 14:05:35,047 - utils - ERROR - Transcript fetch failed for fwibtTUYo9s: no element found: line 1, column 0
+2025-11-29 14:05:39,963 - utils - ERROR - Transcript fetch failed for _nuhYG6fKYE: no element found: line 1, column 0
+2025-11-29 14:05:44,879 - utils - ERROR - Transcript fetch failed for 3iEDMps5P-I: no element found: line 1, column 0
+2025-11-29 14:05:44,888 - database_service - INFO - [DB] Channel saved (simulated): UC-CSyyi47VX1lD9zyeABW3w
+2025-11-29 14:05:44,889 - database_service - INFO - [DB] Saved 25 videos (simulated)
+2025-11-29 14:05:44,890 - database_service - INFO - [DB] Saved 25 transcripts (simulated)
+2025-11-29 14:05:44,891 - orchestrator - INFO - MasterOrchestrator: Starting processing pipeline
+2025-11-29 14:05:44,892 - orchestrator - INFO - Generated 0 transcript chunks
+2025-11-29 14:06:09,648 - vector_db - ERROR - FAISS search failed: object numpy.ndarray can't be used in 'await' expression
+Traceback (most recent call last):
+  File "D:\purple_merit\youtube research project\exported-assets\services_vector_database_service.py", line 150, in search
+    q_vec = await embedder.embed_text(query)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: object numpy.ndarray can't be used in 'await' expression
+2025-11-29 14:06:12,048 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
