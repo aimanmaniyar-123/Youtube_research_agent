@@ -14,7 +14,7 @@ st.set_page_config(
     layout="wide",
 )
 
-API_URL = " https://youtube-research-agent.onrender.com"
+API_URL = " https://youtube-research-agent.onrender.com/docs"
 
 
 # ------------------------------------------------------------
