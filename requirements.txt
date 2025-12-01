@@ -7,30 +7,22 @@ fastapi==0.104.1
 uvicorn[standard]==0.24.0
 pydantic==2.5.0
 pydantic-settings==2.1.0
-
+sentence-transformers==2.6.1
+transformers==4.35.2
+huggingface_hub==0.20.3
 # YouTube & External APIs
 google-api-python-client==2.108.0
 youtube-transcript-api==0.6.2
 requests==2.31.0
 aiohttp==3.9.1
 
-# LLM / Groq
+# AI/LLM
 groq==0.5.0
-
-# Torch + CPU wheels (Python 3.10 compatible)
-torch==2.1.0+cpu --extra-index-url https://download.pytorch.org/whl/cpu
-
-# NLP / Embeddings
-sentence-transformers==2.2.2
-transformers==4.35.2
-
-# Vector DB - FAISS (Python 3.10 compatible)
-faiss-cpu==1.7.4
-
-# ML & Utilities
-numpy==1.26.4
+numpy==1.24.4
 scikit-learn==1.3.2
-huggingface_hub==0.19.3
+
+# Vector DB (FAISS)
+faiss-cpu==1.7.4
 
 # Utilities
 python-dotenv==1.0.0
